@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "teachersapp-b55a0": {
+      "hosting": {
+        "teachersapp": [
+          "teachersapp-b55a0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "teachersapp-b55a0"
+  }
+}
