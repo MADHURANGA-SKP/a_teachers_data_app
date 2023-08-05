@@ -1,4 +1,5 @@
-<br><br><br>
+<div class="flex flex-col justify-center items-center min-h-screen">
+  <div class="flex flex-row justify-center items-start w-full max-w-4xl">
 <form #f="ngForm" (ngSubmit)="addData(f)" class="max-w-md mx-auto bg-white rounded p-8 shadow-md">
   <div class="mb-4">
     <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
@@ -20,15 +21,13 @@
   </div>
   <div class="flex items-center justify-between">
     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" >
-      Save Name
+      Save 
     </button>
+    <!-- <button (click)="updateData(data.id)">Update</button><button (click)="deleteData(data.id)">Delete</button> -->
   </div>
 </form>
 
-
-<br>
-
-<div class="flex justify-center items-center min-h-screen">
+<div class=" items-center ">
   <table class="w-full max-w-3xl bg-white shadow-md rounded px-8 py-6">
     <thead>
       <tr>
@@ -62,5 +61,5 @@
     </tbody>
   </table>
 </div>
-
+</div>
 
