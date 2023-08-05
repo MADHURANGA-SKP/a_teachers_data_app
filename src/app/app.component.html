@@ -1,23 +1,27 @@
-<div class="flex flex-col justify-center items-center min-h-screen">
-  <div class="flex flex-row justify-center items-start w-full max-w-4xl">
-<form #f="ngForm" (ngSubmit)="addData(f)" class="max-w-md mx-auto bg-white rounded p-8 shadow-md">
+<div class="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500">
+  
+<div class="flex justify-center pt-10 text-5xl   text-blue-800 font-thin ">Teachers Data</div>
+
+<div class="flex flex-col justify-center items-center  min-h-screen ">  
+  <div class="flex flex-row absolute  justify-center items-start w-full max-w-4xl">
+     <form #f="ngForm" (ngSubmit)="addData(f)" class="max-w-md mx-auto  rounded-2xl p-8 shadow-2xl bg-white ">
   <div class="mb-4">
     <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
       Enter Teacher's Name
     </label>
-    <input type="text" name="Name" placeholder="Enter Teacher's Name" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" ngModel/>
+    <input type="text" name="Name" placeholder="Type Teacher's Name" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" ngModel/>
   </div>
   <div class="mb-4">
     <label class="block text-gray-700 text-sm font-bold mb-2" for="mail">
       Enter the Mail
     </label>
-    <input type="mail" name="Mail" placeholder="Enter the Mail" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" ngModel/>
+    <input type="mail" name="Mail" placeholder="Type Teacher's E-Mail" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" ngModel/>
   </div>
   <div class="mb-4">
     <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
       Enter your password
     </label>
-    <input type="password" name="password" placeholder="Enter your password" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" ngModel/>
+    <input type="password" name="password" placeholder="Enter password" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" ngModel/>
   </div>
   <div class="flex items-center justify-between">
     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" >
@@ -27,17 +31,17 @@
   </div>
 </form>
 
-<div class=" items-center ">
-  <table class="w-full max-w-3xl bg-white shadow-md rounded px-8 py-6">
+<div class="relative items-center rounded-2xl p-8 shadow-2xl bg-white">
+  <table class="w-full max-w-3xl bg-white shadow-xl rounded-2xl px-8 py-6">
     <thead>
       <tr>
-        <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+        <th class="px-6 py-3  bg-blue-500 rounded-tl-2xl text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
           Name
         </th>
-        <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+        <th class="px-6 py-3 bg-blue-500 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider">
           Mail
         </th>
-        <th class="px-6 py-3 bg-gray-50"></th>
+        <th class="px-6 py-3 bg-blue-500 rounded-tr-2xl"></th>
       </tr>
     </thead>
     <tbody>
@@ -63,3 +67,5 @@
 </div>
 </div>
 
+
+</div>
