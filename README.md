@@ -32,30 +32,30 @@ I have created these things for the project and never used them, cause it been h
 
 in `app.component.ts` i have created Update Query and Delete query for the teachers data app and, its funnctioning perfectly
 
-                //Update Query
-                // updateData(id: string){
-                // const docInstance = doc(this.firestore, 'users', id)
-                // const updateData= {
-                //   Name : 'updatedName'
-                // }
-                // updateDoc(docInstance,updateData)
-                // .then(()=>{
-                //   console.log('Data Updated')
-                // })
-                // .catch((error)=>{
-                //   console.log(error)
-                // })
-                //   }
+               Update Query
+                    updateData(id: string){
+                    const docInstance = doc(this.firestore, 'users', id)
+                    const updateData= {
+                      Name : 'updatedName'
+                    }
+                    updateDoc(docInstance,updateData)
+                    .then(()=>{
+                      console.log('Data Updated')
+                    })
+                    .catch((error)=>{
+                      console.log(error)
+                    })
+                      }
 
-                //Delete query
-                // deleteData(id: string ){
-                //   const docInstance = doc(this.firestore, "users" , id)
-                //   deleteDoc(docInstance)
-                //   .then(() => {
-                //     console.log("data deleted")
-                //   })
-                // }
+                Delete query
+                    deleteData(id: string ){
+                      const docInstance = doc(this.firestore, "users" , id)
+                      deleteDoc(docInstance)
+                      .then(() => {
+                        console.log("data deleted")
+                      })
+                    }
 
 button for the above process
 
-                <!-- <button (click)="updateData(data.id)">Update</button><button (click)="deleteData(data.id)">Delete</button> -->
+                <button (click)="updateData(data.id)">Update</button><button (click)="deleteData(data.id)">Delete</button>
