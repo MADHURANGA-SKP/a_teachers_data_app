@@ -36,28 +36,6 @@ export class AppComponent {
   }
 
 
-//Update Query
-  // updateData(id: string){
-  // const docInstance = doc(this.firestore, 'users', id)
-  // const updateData= {
-  //   Name : 'updatedName'
-  // }
-  // updateDoc(docInstance,updateData)
-  // .then(()=>{
-  //   console.log('Data Updated')
-  // })
-  // .catch((error)=>{
-  //   console.log(error)
-  // })
-  //   }
 
-//Delete query
-  // deleteData(id: string ){
-  //   const docInstance = doc(this.firestore, "users" , id)
-  //   deleteDoc(docInstance)
-  //   .then(() => {
-  //     console.log("data deleted")
-  //   })
-  // }
 
   }
